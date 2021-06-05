@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Layout from "../../components/layout";
-import styles from "./runa.module.css";
 
 const Runa = () => {
   return (
@@ -26,11 +25,11 @@ const Runa = () => {
           </p>
         </div>
       </div>
-      <div className={styles.bgWrap}>
+      <div className="relative w-auto h-80 mt-5">
         <Image src="/images/runa_images/01_t70.jpeg" layout="fill" />
-        <div className={styles.bg}>
+        <div className="absolute mt-10">
           <div className="mx-8 lg:text-center">
-            <h2 className="text-white font-bold text-3xl">化学物質、不使用</h2>
+            <h2 className="text-white font-bold text-2xl">化学物質、不使用</h2>
             <p className="mt-5">
               ホルムアルデヒドなどの人体に有害な物質が発生しません。
               <br />
@@ -56,7 +55,7 @@ const Runa = () => {
             <br />
             塗装作業においては、はけムラが出にくくどなたでも美しく仕上げることができます。
             <br />
-            手垢などの汚れは、雑巾で拭き取ることができ、小さな傷は残しておいた塗料でタッチアップでき
+            手垢などの汚れは、雑巾で拭き取ることができ、小さな傷は残しておいた塗料でタッチアップでき、
             <br />
             メンテナンスが用意です。
           </p>

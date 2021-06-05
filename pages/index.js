@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import { getPostsAndPortfolios } from "../lib/data";
-import Image from "next/image";
 import styles from "../pages/style.module.css";
 
 export const getStaticProps = async () => {

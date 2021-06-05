@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import Link from "next/link";
 import { Navbar } from "./Navbar";
+import Footer from "./Footer";
+import ActiveLink from "./Path";
 
 const name = "shimoda";
 export const siteTitle = "Next.js Sample Website";
@@ -34,6 +36,8 @@ const Layout = ({ children, home }) => {
           </Link>
         </div>
       )}
+      <ActiveLink />
+      <Footer />
     </div>
   );
 };
