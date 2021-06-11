@@ -5,8 +5,7 @@ import { Navbar } from "./Navbar";
 import Footer from "./Footer";
 import ActiveLink from "./Path";
 
-const name = "shimoda";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "";
 
 const Layout = ({ children, home }) => {
   return (

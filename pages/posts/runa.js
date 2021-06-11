@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Layout from "../../components/layout";
+import RunaType from "./Type/RunaType";
 
 const Runa = () => {
   return (
@@ -55,11 +56,10 @@ const Runa = () => {
             <br />
             塗装作業においては、はけムラが出にくくどなたでも美しく仕上げることができます。
             <br />
-            手垢などの汚れは、雑巾で拭き取ることができ、小さな傷は残しておいた塗料でタッチアップでき、
-            <br />
-            メンテナンスが用意です。
+            手垢などの汚れは、雑巾で拭き取ることができ、小さな傷は残しておいた塗料でタッチアップでき、メンテナンスが用意です。
           </p>
         </div>
+        <RunaType />
       </div>
     </Layout>
   );
