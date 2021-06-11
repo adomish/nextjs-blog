@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Image from "next/image";
 
 const tips_img = [20, 32, 40, 52, 70];
@@ -7,11 +6,6 @@ const vlies_img = [
 ];
 
 const RunaType = () => {
-  const [type, setType] = useState(0);
-  const [hovered, setHovered] = useState(false);
-  const toggleHover = () => setHoverd(!hovered);
-  console.log(vlies_img);
-
   return (
     <div>
       <div className="pt-14 mx-8 text-center">
