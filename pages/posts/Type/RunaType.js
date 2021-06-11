@@ -4,6 +4,7 @@ const tips_img = [20, 32, 40, 52, 70];
 const vlies_img = [
   701, 704, 705, 706, 707, 712, 715, 716, 717, 718, 719, 734, 741,
 ];
+const test = 20;
 
 const RunaType = () => {
   return (
@@ -24,7 +25,7 @@ const RunaType = () => {
             />
           </button>
         </h4>
-        <Image src={`/images/tips/20.jpeg`} width="100" height="100" />
+        <Image src={`/images/tips/${test}.jpeg`} width="100" height="100" />
       </div>
       <selection className="flex flex-wrap">
         <div className="w-1/2 h-96 flex flex-wrap justify-around">
