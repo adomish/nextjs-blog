@@ -13,6 +13,7 @@ const RunaType = () => {
       </div>
       <div className=" mt-3 flex items-center justify-around">
         <h4>チップス</h4>
+        <Image src="/images/tips/20.jpeg" width="100" height="100" />
         <h4 className="flex justify-center">
           フリース{" "}
           <button>
@@ -23,6 +24,7 @@ const RunaType = () => {
             />
           </button>
         </h4>
+        <Image src={`/images/tips/20.jpeg`} width="100" height="100" />
       </div>
       <selection className="flex flex-wrap">
         <div className="w-1/2 h-96 flex flex-wrap justify-around">
