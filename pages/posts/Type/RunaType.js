@@ -34,22 +34,20 @@ const RunaType = () => {
       <selection className="flex flex-wrap">
         <div className="w-1/2 h-96 flex flex-wrap justify-around">
           {tips_img.map((item, index) => (
-            <div key={index}>
-              <div className="text-center mb-5">
-                <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
-                  <div className="relative h-24 w-24">
-                    <button>
-                      <Image
-                        src={`/images/tips/${item}.jpeg`}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-full"
-                      />
-                    </button>
-                  </div>
+            <div key={index} className="text-center mb-5">
+              <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
+                <div className="relative h-24 w-24">
+                  <button>
+                    <Image
+                      src={`/images/tips/${item}.jpeg`}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-full"
+                    />
+                  </button>
                 </div>
-                <div className="mt-1">No.{item}</div>
               </div>
+              <div className="mt-1">No.{item}</div>
             </div>
           ))}
         </div>
