@@ -54,7 +54,8 @@ const RunaType = () => {
                     <button>
                       <Image
                         src={`/images/vlies/${item}.jpeg`}
-                        layout="fill"
+                        width="100"
+                        height="100"
                         objectFit="cover"
                         className="rounded-full"
                       />
@@ -70,13 +71,11 @@ const RunaType = () => {
       <div className="w-1/2 flex flex-wrap justify-around">
         {tips_img.map((item, index) => (
           <div key={index} className="mb-5">
-            <div className="focus:outline-none absolute h-24 w-24">
-              <Image
-                src={`/images/tips/${item}.jpeg`}
-                layout="fill"
-                className="rounded-full"
-              />
-            </div>
+            <Image
+              src={`/images/tips/${item}.jpeg`}
+              layout="fill"
+              className="rounded-full"
+            />
             <div className="text-center mt-1">No.{item}</div>
           </div>
         ))}
