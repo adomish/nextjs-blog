@@ -29,13 +29,13 @@ const RunaType = () => {
         <div className="w-1/2 h-96 flex flex-wrap justify-around">
           {tips_img.map((item, index) => (
             <div key={index} className="text-center mb-5">
-              <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
-                <button className="focus:outline-none absolute h-24 w-24">
-                  <Image
+              <div className="flex justify-center items-center h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
+                <button className="focus:outline-none">
+                  <img
                     src={`/images/tips/${item}.jpeg`}
                     width="100"
                     height="100"
-                    className="rounded-full"
+                    className="rounded-full h-24 w-24 object-cover"
                   />
                 </button>
               </div>
@@ -45,20 +45,18 @@ const RunaType = () => {
         </div>
         <div className="w-1/2 flex flex-wrap justify-around">
           {vlies_img.map((item, index) => (
-            <div key={index}>
-              <div className="text-center mb-5">
-                <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
-                  <button className="focus:outline-none absolute h-24 w-24">
-                    <img
-                      src={`/images/vlies/${item}.jpeg`}
-                      width="100"
-                      height="100"
-                      className="rounded-full"
-                    />
-                  </button>
-                </div>
-                <div className="mt-1">No.{item}</div>
+            <div key={index} className="text-center mb-5">
+              <div className="flex justify-center items-center h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
+                <button className="focus:outline-none">
+                  <img
+                    src={`/images/vlies/${item}.jpeg`}
+                    width="100"
+                    height="100"
+                    className="rounded-full h-24 w-24 object-cover"
+                  />
+                </button>
               </div>
+              <div className="mt-1">No.{item}</div>
             </div>
           ))}
         </div>
