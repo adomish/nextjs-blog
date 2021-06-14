@@ -25,6 +25,7 @@ const RunaType = () => {
           </button>
         </h4>
       </div>
+      <div></div>
       <div className="flex">
         <div className="w-1/2 h-96 flex flex-wrap justify-around">
           {tips_img.map((item, index) => (
