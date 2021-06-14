@@ -72,11 +72,7 @@ const RunaType = () => {
           <div key={index} className="mb-5">
             <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
               <button className="focus:outline-none relative h-24 w-24">
-                <Image
-                  src={`/images/tips/${item}.jpeg`}
-                  layout="fill"
-                  className="rounded-full"
-                />
+                <Image src={`/images/tips/${item}.jpeg`} layout="fill" />
               </button>
             </div>
             <div className="text-center mt-1">No.{item}</div>
