@@ -36,7 +36,6 @@ const RunaType = () => {
                     width="100"
                     height="100"
                     layout="responsive"
-                    objectFit="cover"
                     className="rounded-full"
                   />
                 </button>
@@ -56,7 +55,6 @@ const RunaType = () => {
                       width="100"
                       height="100"
                       layout="responsive"
-                      objectFit="cover"
                       className="rounded-full"
                     />
                   </button>
