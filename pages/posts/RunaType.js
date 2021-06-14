@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const tips_img = [20, 32, 40, 52, 70];
 const vlies_img = [
   701, 704, 705, 706, 707, 712, 715, 716, 717, 718, 719, 734, 741,

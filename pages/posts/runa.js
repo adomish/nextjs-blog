@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Layout from "../../components/layout";
-import RunaType from "./Type/RunaType";
+import RunaType from "./RunaType";
 
 const Runa = () => {
   return (
