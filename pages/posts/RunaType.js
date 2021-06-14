@@ -48,8 +48,6 @@ const RunaType = () => {
               <button className="focus:outline-none">
                 <img
                   src={`/images/vlies/${item}.jpeg`}
-                  width="100"
-                  height="100"
                   className="rounded-full h-24 w-24 border-4 hover:border-green-400"
                 />
               </button>
