@@ -14,7 +14,6 @@ const RunaType = () => {
       </div>
       <div className=" mt-3 flex items-center justify-around">
         <h4>チップス</h4>
-        <Image src="/images/tips/20.jpeg" width="100" height="100" />
         <h4 className="flex justify-center">
           フリース{" "}
           <button>
@@ -25,11 +24,6 @@ const RunaType = () => {
             />
           </button>
         </h4>
-        {tips_img.map((item, index) => (
-          <div key={index}>
-            <Image src={`/images/tips/${item}.jpeg`} width="100" height="100" />
-          </div>
-        ))}
       </div>
       <selection className="flex flex-wrap">
         <div className="w-1/2 h-96 flex flex-wrap justify-around">
@@ -73,11 +67,11 @@ const RunaType = () => {
           ))}
         </div>
       </selection>
-      {tips_img.map((item, index) => (
-        <div key={index} className="text-center mb-5">
-          <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
-            <div className="relative h-24 w-24">
-              <button>
+      <div className="w-1/2 flex flex-wrap justify-around">
+        {tips_img.map((item, index) => (
+          <div key={index} className="mb-5">
+            <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
+              <button className="focus:outline-none relative h-24 w-24">
                 <Image
                   src={`/images/tips/${item}.jpeg`}
                   layout="fill"
@@ -86,10 +80,10 @@ const RunaType = () => {
                 />
               </button>
             </div>
+            <div className="text-center mt-1">No.{item}</div>
           </div>
-          <div className="mt-1">No.{item}</div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
