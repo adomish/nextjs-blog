@@ -53,7 +53,9 @@ const RunaType = () => {
                   <button className="focus:outline-none absolute h-24 w-24">
                     <Image
                       src={`/images/vlies/${item}.jpeg`}
-                      layout="fill"
+                      width="100"
+                      height="100"
+                      layout="responsive"
                       objectFit="cover"
                       className="rounded-full"
                     />
