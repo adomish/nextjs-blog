@@ -35,7 +35,6 @@ const RunaType = () => {
                     src={`/images/tips/${item}.jpeg`}
                     width="100"
                     height="100"
-                    layout="responsive"
                     className="rounded-full"
                   />
                 </button>
