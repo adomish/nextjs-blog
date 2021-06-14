@@ -71,8 +71,12 @@ const RunaType = () => {
         {tips_img.map((item, index) => (
           <div key={index} className="mb-5">
             <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
-              <div className="focus:outline-none relative h-24 w-24">
-                <Image src={`/images/tips/${item}.jpeg`} layout="fill" />
+              <div className="focus:outline-none absolute h-24 w-24">
+                <Image
+                  src={`/images/tips/${item}.jpeg`}
+                  layout="fill"
+                  className="rounded-full"
+                />
               </div>
             </div>
             <div className="text-center mt-1">No.{item}</div>
