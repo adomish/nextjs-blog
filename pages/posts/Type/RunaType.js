@@ -75,7 +75,6 @@ const RunaType = () => {
                 <Image
                   src={`/images/tips/${item}.jpeg`}
                   layout="fill"
-                  objectFit="cover"
                   className="rounded-full"
                 />
               </button>
