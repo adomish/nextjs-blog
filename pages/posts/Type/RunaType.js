@@ -49,11 +49,10 @@ const RunaType = () => {
               <div className="text-center mb-5">
                 <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
                   <button className="focus:outline-none absolute h-24 w-24">
-                    <Image
+                    <img
                       src={`/images/vlies/${item}.jpeg`}
                       width="100"
                       height="100"
-                      layout="responsive"
                       className="rounded-full"
                     />
                   </button>
