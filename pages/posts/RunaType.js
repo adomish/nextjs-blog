@@ -30,16 +30,14 @@ const RunaType = () => {
         <div className="w-1/2 h-96 flex flex-wrap justify-around">
           {tips_img.map((item, index) => (
             <div key={index} className="text-center mb-5">
-              <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
-                <button className="focus:outline-none absolute h-24 w-24 ">
-                  <Image
-                    src={`/images/tips/${item}.jpeg`}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-full"
-                  />
-                </button>
-              </div>
+              <button className="focus:outline-none">
+                <img
+                  src={`/images/tips/${item}.jpeg`}
+                  width="100"
+                  height="100"
+                  className="rounded-full h-24 w-24 border-4 hover:border-green-400"
+                />
+              </button>
               <div className="mt-1">No.{item}</div>
             </div>
           ))}
@@ -47,16 +45,14 @@ const RunaType = () => {
         <div className="w-1/2 flex flex-wrap justify-around">
           {vlies_img.map((item, index) => (
             <div key={index} className="text-center mb-5">
-              <div className="flex justify-center items-center relative h-28 w-28 rounded-full border-4 border-white hover:border-green-400">
-                <button className="focus:outline-none absolute h-24 w-24">
-                  <Image
-                    src={`/images/vlies/${item}.jpeg`}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-full"
-                  />
-                </button>
-              </div>
+              <button className="focus:outline-none">
+                <img
+                  src={`/images/vlies/${item}.jpeg`}
+                  width="100"
+                  height="100"
+                  className="rounded-full h-24 w-24 border-4 hover:border-green-400"
+                />
+              </button>
               <div className="mt-1">No.{item}</div>
             </div>
           ))}
